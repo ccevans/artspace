@@ -1,0 +1,41 @@
+<section id="vid" class="video-section">
+
+    <div class="connect">
+        <%= image_tag 'artspace2.png', :class => "image-50" %>
+        <ul>
+
+            <li><%= link_to 'https://instagram.com/anartspace/' do %>Follow us on Instagram. <i class="fa fa-chevron-right"></i><% end %></li>
+
+            <li><%= link_to '#' do %>Contact at hey@anartspace.com.<i class="fa fa-chevron-right"></i><% end %></li>
+
+            <li><%= link_to 'http://www.330monday.com/' do %>Powered by 330Monday Agency. <i class="fa fa-chevron-right"></i><% end %></li>
+
+        </ul>
+
+    </div>
+    
+
+    <div id="P1" class="player" 
+         data-property="{videoURL:'https://youtu.be/1YrMO7MJpC8',containment:'#vid',startAt:0,mute:true,autoPlay:true,loop:true,opacity:.3,showControls:false,addRaster:true,optimizeDisplay: true}">
+    </div>
+
+</section>
+
+
+<section class="sponsor-section">
+
+
+
+
+
+<!-- INSTANSIVE WIDGET --><script src="//instansive.com/widget/js/instansive.js"></script><iframe src="//instansive.com/widgets/8d280ea0671ca54332306189e8b3ff1072f41fdb.html" id="instansive_8d280ea067" name="instansive_8d280ea067"  scrolling="no" allowtransparency="true" class="instansive-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
+
+
+
+</section>
+
+<script>
+   $(function(){
+      $(".player").YTPlayer();
+    });
+</script>
